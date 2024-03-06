@@ -1,17 +1,120 @@
-<!-- change this file -->
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Insert Favicon -->
-    <meta />
-    <!-- Insert Description -->
-    <meta />
-    <!-- Page Title -->
-    <title>First Practice</title>
-  </head>
-  <body>
-    <!-- create small page using mentioned tags in ReadMe.md -->
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/x-icon" href="shoes_favicon.png">
+    <meta name="description" content="Shoes Site">
+    <title>Shoes Store</title>
+
+    <style>
+        .navbar {
+            display: inline-block; width: 10%; margin: 10px 20px; padding: 10px; background-color: aqua; border-radius: 25px;
+        }
+        .navbar:hover {
+            background-color: aquamarine; cursor: pointer;
+        }
+        .mytable {
+            width: 100%; padding: 10px 20px; margin-top: 30px; background-color: antiquewhite;
+        }
+        .tableheader {
+            background-color: aquamarine; border-radius: 10px;
+        }
+        .tablerow {
+            text-align: center;
+        }
+        .mybtn {
+            background-color: violet; width: 10%; padding: 10px; border-radius: 20px; margin: 20px 0 0 45%; cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <header style="text-align: center;">
+        <h1>Shoes Store</h1>
+        <nav>
+            <ul>
+                <li class="navbar">Home</li>
+                <li class="navbar">Information</li>
+                <li class="navbar">Products</li>
+                <li class="navbar">Sellers</li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div style="float: left; width: 60%; padding: 5px 2%;">
+            <p>Welcome to our Shop. This site is for shoes lovers. You can find any shoe that you want. You can easily buy your stuff.
+                Welcome to our Shop. This site is for shoes lovers. You can find any shoe that you want. You can easily buy your stuff.
+                Welcome to our Shop. This site is for shoes lovers. You can find any shoe that you want. You can easily buy your stuff.
+                Welcome to our Shop. This site is for shoes lovers. You can find any shoe that you want. You can easily buy your stuff.
+                Welcome to our Shop. This site is for shoes lovers. You can find any shoe that you want. You can easily buy your stuff.
+            </p>
+            <p>Welcome to our Shop. This site is for shoes lovers. You can find any shoe that you want. You can easily buy your stuff.
+                Welcome to our Shop. This site is for shoes lovers. You can find any shoe that you want. You can easily buy your stuff.
+                Welcome to our Shop. This site is for shoes lovers. You can find any shoe that you want. You can easily buy your stuff.
+                Welcome to our Shop. This site is for shoes lovers. You can find any shoe that you want. You can easily buy your stuff.
+                Welcome to our Shop. This site is for shoes lovers. You can find any shoe that you want. You can easily buy your stuff.
+            </p>
+        </div>
+
+        <aside style="float: right; width: 30%; padding: 5px 2%">
+            <section>
+                <h2>Shoes</h2>
+                <img src="shoes.jfif" alt="shoes picture" style="width: 30%; padding: 10px;">
+                <span>
+                    <a href="https://en.wikipedia.org/wiki/Shoe" target="_blank" alt="wikipedia">Wkipedia Shoes</a>
+                </span>
+            </section>
+
+            <section>
+                <table class="mytable">
+                    <th class="tableheader">Name</th>
+                    <th class="tableheader">Price</th>
+                    <th class="tableheader">Count</th>
+                    <tr class="tablerow">
+                        <td>shoe1</td>
+                        <td>200</td>
+                        <td>15</td>
+                    </tr>
+                    <tr class="tablerow">
+                        <td>shoe2</td>
+                        <td>300</td>
+                        <td>10</td>
+                    </tr>
+                    <tr class="tablerow">
+                        <td>shoe3</td>
+                        <td>150</td>
+                        <td>25</td>
+                    </tr>
+                </table>
+            </section>
+        </aside>
+
+        <div style="clear: both;">
+
+            <div style="float: left; width: 30%;">
+                <div style="margin: 20px;">Audio</div>
+                <audio controls style="margin: 20px; width: 80%;">
+                    <source src="music.mp3" type="audio/mpeg">
+                    Not Supported
+                </audio>
+            </div>
+
+            <div style="float: right; width: 70%;">
+                <div style="margin: 20px;">Video</div>
+                <video width="50%" height="250px" controls>
+                    <source src="film.mp4" type="video/mp4">
+                    Not Supported
+                </video>
+            </div>
+        </div>
+    </main>
+
+    <footer style="background-color: aliceblue; clear: both; padding-bottom: 10px;">
+        <button class="mybtn">Shop</button>
+        <h2 style="text-align: center;">Thanks</h2>
+    </footer>
+</body>
 </html>
